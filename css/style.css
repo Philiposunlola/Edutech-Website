@@ -1,0 +1,907 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-primary:#6c63ff;
+  --color-success:#00bf8e;
+  --color-warning:#f7c94b;
+  --color-danger:#f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white:#fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black:#000;
+  --color-bg:#1f2461;
+  --color-bg1:#2e3267;
+  --color-bg2:#424890;
+
+  --container-width-lg:80%;
+  --container-width-md:90%;
+  --container-width-sm:94%;
+
+  --transition: all 400ms ease;
+
+}
+
+body{
+font-family: "Montserrat";
+line-height: 1.7;
+color: var(--color-white);
+background: var(--color-bg);
+}
+
+.container{
+width: var(--container-width-lg);
+margin: auto;
+}
+
+section{
+padding: 6rem 0;
+}
+
+section h2{
+text-align: center;
+margin-bottom: 4rem;
+}
+
+h1, h2, h3, h4, h5{
+line-height: 1.2;
+}
+h1{
+font-size: 2.4rem;
+}
+
+h2{
+font-size: 2rem;
+}
+
+h3{
+font-size: 1.6rem;
+}
+
+h4{
+font-size: 1.3rem;
+}
+
+a{
+color: var(--color-white);
+}
+
+img{
+width: 100%;
+display: block;
+object-fit: cover;
+}
+
+.btn{
+display: inline-block;
+background: var(--color-light);
+color: var(--color-black);
+padding: 1rem 2rem;
+border: 1px solid transparent;
+font-weight: 500;
+transform: var(--transition);
+}
+
+.btn:hover{
+background: transparent;
+color: var(--color-white);
+border-color: var(--color-white);
+}
+
+.btn-primary{
+background: var(--color-danger);
+color: var(--color-white);
+}
+
+/*********NavBar**************/
+
+nav{
+background: transparent;
+width: 100vw;
+height: 5rem;
+position: fixed;
+top: 0;
+z-index: 11;
+}
+
+/**********change navbar style on scroll using javascript*************/
+
+.window-scroll{
+background: var(--color-primary);
+}
+
+.nav-container{
+display: flex;
+height: 100%;
+justify-content: space-between;
+align-items: center;
+}
+
+nav button{
+display: none;
+}
+.nav-menu{
+display: flex;
+align-items: center;
+gap: 4rem;
+}
+
+.nav-menu a{
+font-size: 0.9rem;
+transition: var(--transition);
+}
+
+.nav-menu a:hover{
+color: var(--color-bg2);
+}
+
+/*********Header section**************/
+
+header{
+position: relative;
+top: 5rem;
+overflow: hidden;
+height: 70vh;
+margin-bottom: 5rem;
+}
+
+.container-header{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+gap: 5rem;
+height: 100%;
+}
+
+.header-left p{
+margin: 1rem 0 2.4rem;
+}
+
+/*********Categories section**************/
+
+.categories{
+background: var(--color-bg1);
+height: 35rem;
+}
+
+.categories h1{
+line-height: 1;
+margin-bottom: 3rem;
+}
+
+.categories-container{
+display: grid;
+grid-template-columns: 40% 60%;
+gap: 2rem;
+}
+
+.categories-left{
+margin-right: 4rem;
+}
+
+.categories-left p{
+margin: 1rem 0 3rem;
+}
+
+.categories-right{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.2rem;
+}
+
+.category{
+background: var(--color-bg2);
+padding: 2rem;
+border-radius: 2rem;
+transition: var(--transition);
+}
+
+.category:hover{
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.category-icon{
+  background: var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
+
+.category:nth-child(2) .category-icon{
+  background: var(--color-danger);
+}
+.category:nth-child(3) .category-icon{
+  background: var(--color-success);
+}
+.category:nth-child(4) .category-icon{
+  background: var(--color-warning);
+}
+.category:nth-child(5) .category-icon{
+  background: var(--color-success);
+}
+
+.category h5{
+  margin: 2rem 0 1rem;
+}
+
+.category p{
+  font-size: 0.85rem;
+}
+
+/*********Courses **************/
+
+.courses{
+  margin-top: 10rem;
+}
+
+.courses-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.course{
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.course:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.course-info{
+  padding: 2rem;
+}
+
+.course-info p{
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
+}
+
+/*********FAQ **************/
+
+.faqs{
+  background: var(--color-bg1);
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.faq{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  height: fit-content;
+  background: var(--color-primary);
+  cursor: pointer;
+}
+
+.faq h4{
+  font-size: 1rem;
+  line-height: 2.2;
+}
+
+.faq-icon{
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+
+.faq p{
+  margin-top: 0.8rem;
+  display: none;
+}
+
+.faq.open p{
+  display: block;
+}
+
+/*********Testimonials **************/
+
+.testimonials-container{
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.testimonial{
+  padding-top: 2rem;
+}
+
+.avatar{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1rem solid var(--color-bg1);
+}
+.testimonial-info{
+  text-align: center;
+}
+
+.testimonial-body{
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.testimonial-body::before{
+  content: "";
+  display: block;
+  background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary), var(--color-primary));
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 47%;
+  top: -1.5rem;
+  transform: rotate(45deg);
+}
+
+/*********footer **************/
+footer{
+background: var(--color-bg1);
+padding-top: 5rem;
+font-size: 0.9rem;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.footer-container > div h4{
+  margin-bottom: 1.2rem;
+}
+
+.footer-1 p{
+  margin: 1rem 0 2rem;
+}
+
+footer ul li{
+  margin-bottom: 0.7;
+}
+
+footer ul li a:hover{
+  text-decoration: underline;
+}
+
+.footer-socials{
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.footer-copyright{
+  text-align: center;
+  margin-top:4rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-bg2);
+}
+
+
+/********* About Page **************/
+
+/********* Achievements **************/
+
+.about-achievements{
+  margin-top: 3rem;
+}
+.about-achievements-container{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5rem;
+}
+
+.about-achievements-right > p{
+  margin: 1.6rem 0 2.5rem;
+}
+
+.achievements-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+.achievement-card{
+  background: var(--color-bg1);
+  padding: 1.6rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.achievement-card:hover{
+  background: var(--color-bg2);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.achievement-icon{
+  background: var(--color-danger);
+  padding: 0.6rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.achievement-card:nth-child(2) .achievement-icon{
+  background: var(--color-success);
+}
+
+.achievement-card:nth-child(3) .achievement-icon{
+  background: var(--color-primary);
+}
+
+.achievement-card p{
+  margin-top: 1rem;
+}
+
+/********* Our Team **************/
+.team{
+  background: var(--color-bg1);
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.team-container{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2.5rem;
+}
+
+.team-member{
+  background: var(--color-bg2);
+  padding: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member:hover{
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.team-member-image img{
+  filter: saturate(0);
+}
+
+.team-member:hover img{
+  filter: saturate(1);
+}
+
+.team-member-info{
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.team-member-info p{
+  color: var(--color-light);
+}
+
+.team-member-socials{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+right: -100%;
+display: flex;
+flex-direction: column;
+background: var(--color-primary);
+border-radius: 1rem 0 1rem;
+box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.5);
+transition: var(--transition);
+}
+
+.team-member:hover .team-member-socials{
+  right: 0;
+}
+
+.team-member-socials a{
+  padding: 1rem;
+}
+
+/********* About Page Style **************/
+
+/********* Achievement **************/
+
+.courses{
+  margin-top: 1rem;
+}
+
+/********* Contact Page Style **************/
+
+.contact-container{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 4rem;
+  background: var(--color-bg1);
+  gap: 4rem;
+  height: 32rem;
+  margin: 7rem auto;
+  border-radius: 1rem;
+}
+
+/********* Aside **************/
+
+.contact-aside{
+  background: var(--color-primary);
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 10rem;
+}
+
+.aside-image{
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.contact-aside h2{
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.contact-aside p{
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.contact-detail li{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact-social{
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 3rem;
+}
+
+.contact-social a{
+  background: var(--color-bg2);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.contact-social a:hover{
+  background: transparent;
+}
+
+/********* form **************/
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 4rem;
+}
+
+.form-name{
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contact-form input[type='text'] {
+  width: 50%;
+}
+
+.contact-form input, textarea{
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+.contact-form .btn{
+  width: max-content;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
+/*********media queries **************/
+/********* Tablet **************/
+
+@media(max-width: 1024px){
+  .container{
+    width: var(--container-width-md);
+  }
+
+ h1{
+  font-size: 2.2rem;
+ }
+ h2{
+  font-size: 1.7rem;
+ }
+ h3{
+  font-size: 1.4rem;
+ }
+ h4{
+  font-size: 1.2rem;
+ }
+/*********navbar **************/
+nav button{
+  display: inline-block;
+  background: transparent;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+nav button#close-menu-btn{
+  display: none;
+}
+.nav-menu{
+  position: fixed;
+  top: 5rem;
+  right: 5%;
+  height: fit-content;
+  width: 18rem;
+  flex-direction: column;
+  gap: 0;
+  display: none;
+}
+
+.nav-menu li{
+  width: 100%;
+  height: 5.8rem;
+  animation: animateNavitems 400ms linear forwards;
+  transform-origin: top right;
+}
+
+.nav-menu li:nth-child(2){
+  animation-delay: 200ms;
+}
+.nav-menu li:nth-child(3){
+  animation-delay: 300ms;
+}
+.nav-menu li:nth-child(4){
+  animation-delay: 400s;
+}
+
+@keyframes animateNavitems{
+  0%{
+      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+  }
+  100%{
+    transform: rotateZ(0) rotateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.nav-menu li a{
+  background: var(--color-primary);
+  box-shadow: 4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.nav-menu li a:hover{
+  background: var(--color-bg2);
+  color: var(--color-white);
+}
+
+/*********header **************/
+  header{
+    height: 62vh;
+    margin-bottom: 4rem;
+  }
+
+ .container-header{
+    gap: 0;
+    padding-bottom: 3rem;
+  }
+
+  /*********categories **************/
+
+  .categories{
+    height: auto;
+  }
+  .categories-container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .categories-left{
+    margin-right: 0;
+  }
+
+  /*********Courses **************/
+.courses{
+  margin-top: 0;
+}
+
+.courses-container{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+  /*********FAQs **************/
+.faqs-container{
+  grid-template-columns: 1fr;
+}
+.faq{
+  padding: 1.4rem;
+}
+  /*********footer **************/
+  .footer-container{
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5rem;
+  }
+
+/********* About Page Style **************/
+
+    .about-achievements{
+     margin-top: 2rem;
+  }
+
+    .about-achievements-container{
+      grid-template-columns: 1fr;
+      gap: 4rem;
+  }
+
+    .about-achievements-left{
+      width: 80%;
+      margin: 0 auto;
+ }
+
+/********* Our Team **************/
+.team-container{
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+ }
+.team-member{
+  padding: 1rem;
+ }
+
+ /********* Contact Page Style **************/
+.contact{
+  padding-bottom: 0;
+}
+.contact-container{
+  gap: 1.5rem;
+  margin-top: 3rem;
+  height: auto;
+  padding: 1.5rem;
+}
+.contact-aside{
+  width: auto;
+  padding: 1.5rem;
+  bottom: 0;
+}
+.contact-form{
+  align-self: center;
+  margin-right: 1.5rem;
+
+}
+
+ }
+
+/********* Phones **************/
+
+@media (max-width:600px){
+  body{
+  overflow-x: hidden;
+}
+  .container{
+  width: var(--container-width-sm);
+}
+
+/********* Navbar **************/
+.nav-menu{
+  right: 3%;
+}
+
+/********* Header **************/
+header{
+  height: 100vh;
+}
+
+.container-header{
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-top: 0;
+}
+
+.header-left p{
+  margin-bottom: 1.3rem;
+}
+/********* Categories **************/
+.categories-right{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+}
+
+.category{
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.category-icon{
+  margin-top: 4px;
+  display: inline-block;
+}
+
+/********* Popular Courses **************/
+.courses-container{
+  grid-template-columns: 1fr;
+}
+
+/********* Testimonials **************/
+.testimonial-body{
+  padding: 1.2rem;
+}
+
+.footer-container{
+ grid-template-columns: 1fr;
+ justify-content:center; 
+ align-items: center;
+ gap: 2rem; 
+ padding-left: 4rem;
+
+}
+.footer-1 p{
+margin: 1rem auto;
+padding-right: 4rem; 
+}
+ /********* About Page Style **************/
+ /********* Achievement **************/
+
+.achievements-card{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+}
+
+.team-container{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7;
+}
+
+.team-member{
+  padding: 0;
+}
+
+.team-member p{
+  margin-bottom: 1.5rem;
+}
+
+ /********* Contact Page Style **************/
+.contact-container{
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 0;
+  padding: 0;
+}
+.contact-form{
+  margin: 0 1.5rem 3rem;
+}
+.form-name{
+  flex-direction: column;
+}
+.form-name input[type='text']{
+  width: 100%;
+}
+}
