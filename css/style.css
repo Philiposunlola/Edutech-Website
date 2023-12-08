@@ -309,7 +309,6 @@ transition: var(--transition);
 }
 
 /*********Testimonials **************/
-
 .testimonials-container{
   overflow-x: hidden;
   position: relative;
