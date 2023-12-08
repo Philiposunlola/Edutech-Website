@@ -515,13 +515,11 @@ transition: var(--transition);
 /********* About Page Style **************/
 
 /********* Achievement **************/
-
 .courses{
   margin-top: 1rem;
 }
 
 /********* Contact Page Style **************/
-
 .contact-container{
   display: grid;
   grid-template-columns: 40% 60%;
@@ -534,7 +532,6 @@ transition: var(--transition);
 }
 
 /********* Aside **************/
-
 .contact-aside{
   background: var(--color-primary);
   padding: 3rem;
