@@ -855,7 +855,13 @@ header{
   padding: 1.2rem;
 }
 
-/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvcv
+.footer-container{
+ grid-template-columns: 1fr;
+ justify-content:center; 
+ align-items: center;
+ gap: 2rem; 
+ padding-left: 4rem;
+
 }
 .footer-1 p{
 margin: 1rem auto;
