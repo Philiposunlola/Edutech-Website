@@ -113,7 +113,6 @@ z-index: 11;
 }
 
 /**********change navbar style on scroll using javascript*************/
-
 .window-scroll{
 background: var(--color-primary);
 }
