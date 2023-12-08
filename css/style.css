@@ -234,7 +234,6 @@ transition: var(--transition);
 }
 
 /*********Courses **************/
-
 .courses{
   margin-top: 10rem;
 }
@@ -267,7 +266,6 @@ transition: var(--transition);
 }
 
 /*********FAQ **************/
-
 .faqs{
   background: var(--color-bg1);
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
@@ -397,7 +395,6 @@ footer ul li a:hover{
 /********* About Page **************/
 
 /********* Achievements **************/
-
 .about-achievements{
   margin-top: 3rem;
 }
