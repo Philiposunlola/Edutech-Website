@@ -29,7 +29,6 @@
   --container-width-sm:94%;
 
   --transition: all 400ms ease;
-
 }
 
 body{
@@ -104,7 +103,6 @@ color: var(--color-white);
 }
 
 /*********NavBar**************/
-
 nav{
 background: transparent;
 width: 100vw;
